@@ -1,4 +1,4 @@
-# Modelo de Controle Sintético: Resultados e Discussão
+# Modelo de Controle Sintético
 
 ## Introdução
 
@@ -10,11 +10,11 @@ A ideia central do MCS é que uma média ponderada de várias unidades de contro
 
 A escolha do vetor ótimo de pesos é realizada com o auxílio de variáveis preditoras, que ajudam a explicar a variável de interesse. O procedimento consiste em selecionar covariáveis capazes de explicar a variável de interesse e, em seguida, determinar os pesos que minimizam a distância entre as variáveis preditoras na unidade tratada e nas unidades de controle no período pré-tratamento. Assim, a magnitude do efeito do tratamento é dada pela diferença entre os valores observados da variável de interesse na unidade tratada durante o período pós-tratamento e a média ponderada dos valores observados nas unidades de controle:
 
-\[
+$
 Y_{T} - \sum_{i} W_{i} Y_{C_{i}}
-\]
+$
 
-onde \( Y_{T} \) é o valor da variável de interesse na unidade tratada, \( Y_{C_{i}} \) o valor da mesma variável nas unidades não tratadas e \( W_{i} \) os pesos de cada elemento do grupo controle na unidade sintética.
+onde $ Y_{T}$ é o valor da variável de interesse na unidade tratada, $Y_{C_{i}}$ o valor da mesma variável nas unidades não tratadas e $W_{i}$ os pesos de cada elemento do grupo controle na unidade sintética.
 
 De acordo com Abadie (2021), o Estimador de Controle Sintético tem vantagens em relação a técnicas de regressão, como a transparência do cenário contrafactual e a interpretabilidade, uma vez que o efeito do tratamento pode ser visualizado graficamente.
 
