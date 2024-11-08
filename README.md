@@ -4,7 +4,7 @@
 
 ### O Modelo
 
-Conforme discutido nos produtos anteriores, o instrumento utilizado para avaliar o impacto do Programa de Fortalecimento do Sistema Único de Saúde de São Bernardo do Campo é o **Método de Controle Sintético (MCS)**. Proposto por Abadie & Gardeazabal (2003) e Abadie, Diamond & Hainmueller (2010), o MCS tem sido amplamente utilizado nas ciências sociais aplicadas para estimar os efeitos de políticas públicas em estudos de caso comparativo. O objetivo principal destes modelos é comparar os valores de uma variável de interesse em uma unidade tratada após a implementação de uma política pública com os valores da mesma variável em um grupo de controle formado por unidades próximas que não sofreram intervenção.
+O instrumento utilizado para avaliar o impacto do Programa de Fortalecimento do Sistema Único de Saúde de São Bernardo do Campo é o **Método de Controle Sintético (MCS)**. Proposto por Abadie & Gardeazabal (2003) e Abadie, Diamond & Hainmueller (2010), o MCS tem sido amplamente utilizado nas ciências sociais aplicadas para estimar os efeitos de políticas públicas em estudos de caso comparativo. O objetivo principal destes modelos é comparar os valores de uma variável de interesse em uma unidade tratada após a implementação de uma política pública com os valores da mesma variável em um grupo de controle formado por unidades próximas que não sofreram intervenção.
 
 A ideia central do MCS é que uma média ponderada de várias unidades de controle pode reproduzir as características da unidade tratada melhor do que qualquer unidade isolada. Os pesos de cada unidade do grupo doador na unidade sintética são determinados de forma a reproduzir da melhor forma possível a trajetória da variável de interesse na unidade tratada durante o período pré-tratamento.
 
@@ -20,7 +20,7 @@ De acordo com Abadie (2021), o Estimador de Controle Sintético tem vantagens em
 
 ## Estratégia Empírica
 
-Dando continuidade à discussão proposta no Produto 3, foram consideradas duas estratégias empíricas para ajustar o MCS aos treze indicadores de impacto e resultados previstos no Termo de Referência:
+Foram consideradas duas estratégias empíricas para ajustar o MCS aos treze indicadores de impacto e resultados previstos no projeto:
 
 1. Ajustar o MCS para todos os indicadores utilizando a mesma coorte sintética e os mesmos indicadores de recursos (covariáveis);
 2. Ajustar o MCS considerando coortes e covariáveis únicas para cada indicador.
@@ -43,7 +43,7 @@ Além das variáveis de recursos, adicionamos valores defasados da variável de 
 
 ## Resultados e Discussão
 
-A estimação do MCS foi realizada com o pacote `synth` do R (Abadie, A., Diamond, A., Hainmueller, J., 2011). O código para o ajuste da variável `int_csab` está disponível no Anexo XX.
+A estimação do MCS foi realizada com o pacote `synth` do R (Abadie, A., Diamond, A., Hainmueller, J., 2011). O código para o ajuste da variável `cob_sus` está disponível neste projeto.
 
 ## Referências
 
@@ -51,5 +51,3 @@ A estimação do MCS foi realizada com o pacote `synth` do R (Abadie, A., Diamon
 - Abadie, A., Diamond, A., & Hainmueller, J. (2010). *Synthetic Control Methods for Comparative Case Studies: Estimating the Effect of California’s Tobacco Control Program*. Journal of the American Statistical Association.
 - Abadie, A. (2021). *Using Synthetic Controls: Feasibility, Data Requirements, and the Use of Covariates*. Econometrica.
 - Ferman, B., Pinto, C., & Possebom, V. (2020). *Simulation Evidence on the Use of Lagged Dependent Variables in Synthetic Controls*. Journal of Applied Econometrics.
-
-## Anexos
